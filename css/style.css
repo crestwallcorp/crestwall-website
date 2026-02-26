@@ -135,3 +135,48 @@ footer {
 .gallery img:hover {
   transform: scale(1.05);
 }
+/* -------- PROJECT SECTION IMPROVEMENT -------- */
+
+#projects {
+  text-align: center;
+}
+
+#projects img {
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+#projects img:hover {
+  transform: scale(1.05);
+}
+
+/* -------- CONTAINER SPACING -------- */
+
+.section {
+  padding: 60px 20px;
+}
+
+/* -------- MAKE TEXT LOOK CLEANER -------- */
+
+h2 {
+  margin-bottom: 20px;
+  color: #1b263b;
+}
+
+p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* -------- BUTTON STYLE -------- */
+
+.btn {
+  background-color: #f4a261;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
