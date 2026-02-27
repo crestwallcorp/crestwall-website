@@ -207,3 +207,45 @@ p {
 .hero-overlay p {
   font-size: 18px;
 }
+/* -------- MOBILE RESPONSIVE DESIGN -------- */
+@media (max-width: 768px) {
+
+  header .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .hero {
+    height: 280px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 26px;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+}
