@@ -1,17 +1,20 @@
- -------- SIMPLE FADE-IN EFFECT -------- 
+// -------- SCROLL FADE-IN EFFECT --------
 
-.section {
-  opacity 0;
-  transform translateY(30px);
-  transition all 0.6s ease;
-}
+const sections = document.querySelectorAll(".section");
 
-.section.visible {
-  opacity 1;
-  transform translateY(0);
-}
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
 
-// Lightbox functionality
+    if (position < screenHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+});
+
+// -------- LIGHTBOX FUNCTIONALITY --------
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const images = document.querySelectorAll(".gallery a");
